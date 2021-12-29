@@ -10,6 +10,8 @@ import { ExpertsComponent } from './experts/experts.component';
 import { WhatitisComponent } from './whatitis/whatitis.component';
 import { HowitworkComponent } from './howitwork/howitwork.component';
 import { SignupComponent } from './signup/signup.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { SignupComponent } from './signup/signup.component';
     ExpertsComponent,
     WhatitisComponent,
     HowitworkComponent,
-    SignupComponent
+    SignupComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

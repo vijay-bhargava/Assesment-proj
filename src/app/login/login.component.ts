@@ -12,8 +12,7 @@ export class LoginComponent implements OnInit {
   model = new Login("", "");
   submitted = false;
   onSubmit() { 
-    this.submitted = true; 
-    
+    this.submitted = true;   
   }
   loginVal(email:any,password: any){
     if (this.submitted == true){
